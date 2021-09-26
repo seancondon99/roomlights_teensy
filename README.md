@@ -10,7 +10,7 @@ All the visualizations require reading in real-time audio information to the Tee
 Takes the fast fourier transform of audio signal and displays frequency power at different points of the LED strip. E.g. low frequencies are displayed in the middle of the strip, and high frequencies are displayed on the edges of the strip. On top of the frequency power, the lights also loop through a rainbow color scheme, and decay to black after being lit up by audio signal.
 
 #### beat_detection_trailing_array.ino
-This file detects beats in the bass range of the audio signal by keeping a trailing array of the past N bass frequency values, and detected significant deviations from the average of these trailing N values.
+This file detects beats in the bass range of the audio signal by keeping a trailing array of the past N bass frequency values, and detecting significant deviations from the average of these trailing N values.
 
 #### jump_game.ino
 A single-player game in which a one-dimensional character needs to jump over one-dimensional spikes for a total of six levels. The player jumps when the Teensy detects a single clapping sound, so you need to time your claps to have the character jump over all of the spikes.
